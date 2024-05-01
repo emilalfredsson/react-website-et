@@ -5,35 +5,24 @@ import './Cards.css';
 function Cards() {
   return (
     <div className='cards'>
-        <h1>Check out these epic destinations</h1>
+        <div className='cards__box'>
+            <h1 className='cards__header'>Hjá E Tómassyni sérhæfum við okkur í bílastæða- og vegmerkingum fyrir fyrirtæki og einstaklinga</h1> 
+            <h2 className='cards__text'>Við notum gæðamálningu og faglega vinnuhætti til að tryggja skýrar og varanlegar merkingar sem uppfylla gildandi reglugerðir og skara fram úr</h2>
+        </div>
         <div className="cards__container">
             <div className="cards__wrapper">
                 <ul className="cards__items">
                     <CardItem 
-                     src ="images/img-9.jpg"
-                     text ="Explore the hidden waterfall deep inside the amazon jungle"
-                     label='Adventure'
+                     src ="images/et-images/IMG_0954-2.jpeg"
+                     text ="Við bjóðum upp á margskonar þjónustur, allt við hæfi allra, og við ábyrgjumst gæðaverk"
+                     label='Þjónustur'
                      path='/services'
                     />
                     <CardItem 
-                     src ="images/img-2.jpg"
-                     text ="Travel through the islands of Bali in a private cruise"
-                     label='Luxury'
-                     path='/services'
-                    />
-                </ul>
-                <ul className="cards__items">
-                    <CardItem 
-                     src ="images/img-9.jpg"
-                     text ="Explore the hidden waterfall deep inside the amazon jungle"
-                     label='Adventure'
-                     path='/services'
-                    />
-                    <CardItem 
-                     src ="images/img-2.jpg"
-                     text ="Travel through the islands of Bali in a private cruise"
-                     label='Luxury'
-                     path='/services'
+                     src ="images/et-images/smartpass.PNG"
+                     text ="Við bjóðum upp á öryggisþætti sem hafa ekki áður sést hér á landi"
+                     label='Öryggisþættir'
+                     path='/safety'
                     />
                 </ul>
             </div>

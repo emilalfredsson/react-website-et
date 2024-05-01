@@ -6,7 +6,7 @@ import Footer from '../Footer';
 
 function Main() {
   return (
-    <>
+    <>  
       <HeroSection />
       <Cards />
       <Footer/>

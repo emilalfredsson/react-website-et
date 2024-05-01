@@ -1,6 +1,7 @@
 .cards {
     padding: 4rem;
     background: #fff;
+    padding-bottom: 2rem;
   }
   
   h1 {
@@ -14,6 +15,32 @@
     max-width: 1120px;
     width: 90%;
     margin: 0 auto;
+  }
+
+  .cards__box {
+    margin-top: 32px;
+    margin-bottom: 32px;
+    border-top: solid;
+    border-bottom: solid;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 24px;
+    padding-bottom: 32px;
+    color: lightgray;
+  }
+
+  .cards__box > h1 {
+    color: #252e48
+  }
+
+  .cards__box > h2 {
+    color: #252e48
+  }
+
+
+  .cards__text {
+    margin-top: 32px;
+    text-align: center;
   }
   
   .cards__wrapper {

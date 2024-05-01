@@ -1,0 +1,202 @@
+
+  
+  .safety-container {
+    background: url('/public/images/et-images/safety.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+    object-fit: contain;
+  }
+
+  .safety__content {
+	padding: 4rem;
+    background: #fff;
+    padding-bottom: 2rem;
+  }
+
+  .safety-content {
+	padding-top: 0.5rem;
+  }
+
+  .safety__box {
+    margin-top: 32px;
+    margin-bottom: 32px;
+    border-top: solid;
+    border-bottom: solid;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 24px;
+    padding-bottom: 32px;
+    color: lightgray;
+  }
+
+  .safety__box > h1 {
+    color: #252e48
+  }
+
+  .safety__box > h2 {
+    color: #252e48
+  }
+
+
+  .safety__text {
+    margin-top: 32px;
+    text-align: center;
+  }
+  
+  .safety-container > h1 {
+    color: #fff;
+    font-size: 100px;
+    animation: glow 3s ease-in-out infinite alternate;
+  }
+
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 20px #2d9da9;
+    }
+    to {
+      text-shadow: 0 0 30px #34b3c1, 0 0 10px #4dbbc7;
+    }
+  }
+
+  
+  .safety-container > p {
+    margin-top: 8px;
+    text-align: center;
+    color: #fff;
+    font-size: 32px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+      'Lucida Sans', Arial, sans-serif;
+  }
+
+  .safety-list {
+    --length: 4;
+	--h: 212deg;
+	--l: 43%;
+	--brandColor: hsl(var(--h), 71%, var(--l));
+	font-family: Montserrat, sans-serif;
+	margin: 0;
+	background-color: whitesmoke;
+}
+
+#safety-item > p {
+	margin: 0;
+	line-height: 1.6;
+	margin-bottom: 1rem;
+}
+
+.safety-list {
+	list-style: none;
+	counter-reset: list;
+	padding: 0 1rem;
+}
+
+.safety-list > li {
+	--stop: calc(100% / var(--length) * var(--i));
+	--l: 50%;
+	--l2: 50%;
+	--h: calc(180 + (var(--i) - 1) * ((270 - 180) / var(--length)));
+	--c1: hsl(var(--h), 71%, var(--l));
+	--c2: hsl(var(--h), 71%, var(--l2));
+	
+	position: relative;
+	counter-increment: list;
+	max-width: 45rem;
+	margin: 2rem auto;
+	padding: 2rem 1rem 1rem;
+	box-shadow: 0.1rem 0.1rem 1.5rem rgba(0, 0, 0, 0.3);
+	border-radius: 0.25rem;
+	overflow: hidden;
+	background-color: white;
+}
+
+.safety-item_1 {
+    --i: 1;
+}
+
+.safety-item_2 {
+    --i: 2;
+}
+
+.safety-item_3 {
+    --i: 3;
+}
+
+.safety-item_4 {
+    --i: 4;
+}
+
+.safety-list > li::before {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 1rem;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: linear-gradient(to right, var(--c1) var(--stop), var(--c2) var(--stop));
+}
+
+#safety-item > h3 {
+	display: flex;
+	align-items: baseline;
+	margin: 0 0 1rem;
+	color: rgb(70 70 70);
+}
+
+#safety-item > h3::before {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex: 0 0 auto;
+	margin-right: 1rem;
+	width: 3rem;
+	height: 3rem;
+	content: counter(list);
+	padding: 1rem;
+	border-radius: 50%;
+	background-color: var(--c1);
+	color: white;
+}
+
+@media (min-width: 40em) {
+	.safety-list > li {
+		margin: 3rem auto;
+		padding: 3rem 2rem 2rem;
+	}
+	
+	#safety-item > h3 {
+		font-size: 2.25rem;
+		margin: 0 0 2rem;
+	}
+	
+	#safety-item > h3::before {
+		margin-right: 1.5rem;
+	}
+}
+
+  
+  
+  
+  @media screen and (max-width: 960px) {
+    .safety-container > h1 {
+      font-size: 70px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .safety-container > h1 {
+      font-size: 50px;
+    }
+  
+    .safety-container > p {
+      font-size: 30px;
+    }
+  
+  }

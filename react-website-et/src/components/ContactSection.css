@@ -1,0 +1,63 @@
+.contact-container {
+    background-color: rgb(204 224 243);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+    object-fit: contain;
+    padding: 4rem;
+    font-size: 32px; 
+    text-align: center;
+  }
+
+  .contact-header {
+    margin-top: 32px;
+    margin-bottom: 32px;
+    border-top: solid;
+    border-bottom: solid;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 24px;
+    padding-bottom: 32px;
+    color: lightgray;
+  }
+
+  .contact-header > h1 {
+    color: #252e48
+  }
+
+  .contact-header > p {
+    color: #252e48
+  }
+
+  .input-areas {
+    width: 100%
+  }
+
+  .input-areas > form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+  }
+
+  .email-input, .inquiry-input {
+    padding: 8px 20px;
+    border-radius: 2px;
+    margin-right: 10px;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    margin-bottom: 16px;
+    border: 1px solid #fff;
+    width: 50%;
+    margin: 1rem;
+  }
+
+  .email-input::placeholder, .inquiry-input::placeholder {
+    color: #b1b1b1;
+  }

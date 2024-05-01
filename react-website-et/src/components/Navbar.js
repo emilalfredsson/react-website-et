@@ -11,6 +11,18 @@ function Navbar() {
     const handleClick = () => setClick(!click);
     const closeMobileMenu = () => setClick(false);
 
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth" // Smooth scrolling animation
+        });
+    };
+
+    const handleLinkClick = () => {
+        closeMobileMenu();
+        scrollToTop();
+    };
+
     const showButton = () => {
         if (window.innerWidth <= 960) {
             setButton(false);
@@ -29,35 +41,34 @@ function Navbar() {
     <>
         <nav className="navbar">
             <div className="navbar-container">
-                <Link to="/" className="navbar-logo" onClick = {closeMobileMenu}>                   
-                    TRVL <i className="fab fa-typo3"/>
+                <Link to="/" className="navbar-logo" onClick = {handleLinkClick}>
                 </Link>
                 <div className="menu-icon" onClick={handleClick}>
                     <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
                 </div>
                 <ul className ={click ? 'nav-menu active' : 'nav-menu'}>
                     <li className ='nav-item'>
-                        <Link to = '/' className='nav-links' onClick = {closeMobileMenu}>
-                            Home
+                        <Link to = '/' className='nav-links' onClick = {handleLinkClick}>
+                            Heim
                         </Link>
                     </li>
                     <li className ='nav-item'>
-                        <Link to = '/services' className='nav-links' onClick = {closeMobileMenu}>
-                            Services
+                        <Link to = '/services' className='nav-links' onClick = {handleLinkClick}>
+                            Þjónustur
                         </Link>
                     </li>
                     <li className ='nav-item'>
-                        <Link to = '/products' className='nav-links' onClick = {closeMobileMenu}>
-                            Products
+                        <Link to = '/safety' className='nav-links' onClick = {handleLinkClick}>
+                            Öryggisþættir
                         </Link>
                     </li>
                     <li className ='nav-item'>
-                        <Link to = '/sign-up' className='nav-links-mobile' onClick = {closeMobileMenu}>
-                            Sign Up
+                        <Link to = '/contact' className='nav-links-mobile' onClick = {handleLinkClick}>
+                            Hafa Samband
                         </Link>
                     </li>
                 </ul>
-                {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
+                {button && <Button buttonStyle='btn--outline'>Hafa Samband</Button>}
             </div>
         </nav>
     </>

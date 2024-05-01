@@ -34,6 +34,7 @@
     font-size: 20px;
   }
   
+  .btn--outline:hover,
   .btn--large:hover,
   .btn--medium:hover {
     transition: all 0.3s ease-out;

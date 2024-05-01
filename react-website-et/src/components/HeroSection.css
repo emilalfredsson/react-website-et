@@ -1,7 +1,9 @@
 
   
   .hero-container {
-    background: url('/public/images/img-home.jpg');
+    background: url('/public/images/et-images/IMG_1108.jpeg');
+    background-size: cover;
+    background-position: center;
     height: 100vh;
     width: 100%;
     display: flex;
@@ -15,11 +17,22 @@
   .hero-container > h1 {
     color: #fff;
     font-size: 100px;
-    margin-top: -100px;
+    animation: glow 3s ease-in-out infinite alternate;
   }
+
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 20px #2d9da9;
+    }
+    to {
+      text-shadow: 0 0 30px #34b3c1, 0 0 10px #4dbbc7;
+    }
+  }
+
   
   .hero-container > p {
     margin-top: 8px;
+    text-align: center;
     color: #fff;
     font-size: 32px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
@@ -41,14 +54,12 @@
   @media screen and (max-width: 960px) {
     .hero-container > h1 {
       font-size: 70px;
-      margin-top: -150px;
     }
   }
   
   @media screen and (max-width: 768px) {
     .hero-container > h1 {
       font-size: 50px;
-      margin-top: -100px;
     }
   
     .hero-container > p {
