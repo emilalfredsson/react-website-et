@@ -143,3 +143,10 @@
       margin-bottom: 2rem;
     }
   }
+
+  @media screen and (max-width: 768px) {
+    .cards__box {
+      padding-left: 0;
+      padding-right:0;
+    }
+  }
