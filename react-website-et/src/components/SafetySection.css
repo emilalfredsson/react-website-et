@@ -198,5 +198,10 @@
     .safety-container > p {
       font-size: 30px;
     }
+
+    .safety__box {
+      padding-left: 0;
+      padding-right: 0;
+    }
   
   }
