@@ -60,6 +60,10 @@
   .footer-link-items > h2 {
     color: #fff;
   }
+
+  .footer-link-items > p {
+    margin: 0.5rem;
+  }
   
   .footer-link-items a {
     color: #fff;

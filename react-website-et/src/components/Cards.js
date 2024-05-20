@@ -7,7 +7,7 @@ function Cards() {
     <div className='cards'>
         <div className='cards__box'>
             <h1 className='cards__header'>Hjá E Tómassyni sérhæfum við okkur í bílastæða- og vegmerkingum fyrir fyrirtæki og einstaklinga</h1> 
-            <h2 className='cards__text'>Við notum gæðamálningu og faglega vinnuhætti til að tryggja skýrar og varanlegar merkingar sem uppfylla gildandi reglugerðir og skara fram úr</h2>
+            <h2 className='cards__text'>E Tómasson er rótgróið fjölskyldu fyrirtæki sem hefur verið starfandi í yfir 20 ár. Fyrirtækið býr yfir fullkomnum vélakosti og þrautreyndum starfsmönnum sem tryggir viðskiptavinum fyrirtækisins ávallt fullkomin gæði.</h2>
         </div>
         <div className="cards__container">
             <div className="cards__wrapper">

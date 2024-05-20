@@ -20,9 +20,6 @@ function Footer() {
         <p className='footer-subscription-heading'>
           Hafðu samband við okkur í dag
         </p>
-        <p className='footer-subscription-text'>
-          við gerum þér tilboð
-        </p>
       </section>
       <div class='footer-links'>
         <div className='footer-link-wrapper'>
@@ -32,8 +29,6 @@ function Footer() {
               <p>Kennitala: 450510-0250</p>
           </div>
           <div class='footer-link-items'>
-            <p>Strandgata 32</p>
-            <p>220 Hafnarfirði</p>
           </div>
         </div>
       </div>

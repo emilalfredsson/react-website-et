@@ -1,34 +1,79 @@
 
-  
-  .hero-container {
-    background: url('/public/images/et-images/IMG_1108.jpeg');
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
-    object-fit: contain;
-  }
-  
-  .hero-container > h1 {
-    color: #fff;
-    font-size: 100px;
-    animation: glow 3s ease-in-out infinite alternate;
-  }
+.hero-container {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
 
-  @keyframes glow {
-    from {
-      text-shadow: 0 0 20px #2d9da9;
-    }
-    to {
-      text-shadow: 0 0 30px #34b3c1, 0 0 10px #4dbbc7;
-    }
-  }
+.hero-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
 
+.hero-image.active {
+  opacity: 1;
+}
+
+.hero-text-container {
+  color: #fff;
+  font-size: 20px;
+  position: relative;
+  z-index: 1; /* Ensure text is above the images */
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out; /* Faster transition for fading out */
+}
+
+.hero-text-container.active {
+  opacity: 1;
+}
+
+.hero-text-container.inactive {
+  opacity: 0;
+}
+
+.hero-heading {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fff; /* Adjust color as needed */
+  border-radius: 20px; /* Optional: to give rounded corners */
+  background-color: rgba(0, 0, 0, 0.651); /* Light grey with transparency */
+  margin: auto;
+  margin-bottom: 1rem;
+  display: inline-block;
+  padding: 0.8rem;
+}
+
+.hero-subheading {
+  font-size: 1.2rem;
+  color: #fff; /* Adjust color as needed */
+  border-radius: 20px; /* Optional: to give rounded corners */
+  background-color: rgba(0, 0, 0, 0.651); /* Light grey with transparency */
+  padding: 20px;
+  margin: auto;
+  max-width: 50%;
+}
+
+.hero-btns {
+  position: relative;
+  z-index: 1; /* Ensure the button is above the images */
+  margin-top: 20px;
+}
+
+.box-shadow {
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+}
   
   .hero-container > p {
     margin-top: 8px;
