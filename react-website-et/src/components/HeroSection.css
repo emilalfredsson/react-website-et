@@ -29,10 +29,15 @@
   color: #fff;
   font-size: 20px;
   position: relative;
-  z-index: 1; /* Ensure text is above the images */
+  z-index: 1;
   text-align: center;
   opacity: 0;
-  transition: opacity 0.5s ease-in-out; /* Faster transition for fading out */
+  transition: opacity 1s ease-in-out;
+  font-family: 'Roboto', sans-serif; /* Custom font */
+}
+
+.hero-text-container:hover {
+  opacity: 1;
 }
 
 .hero-text-container.active {
@@ -46,23 +51,20 @@
 .hero-heading {
   font-size: 3rem;
   font-weight: bold;
-  color: #fff; /* Adjust color as needed */
-  border-radius: 20px; /* Optional: to give rounded corners */
-  background-color: rgba(0, 0, 0, 0.651); /* Light grey with transparency */
+  color: #fff;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.7); /* Slightly darker grey with transparency */
   margin: auto;
   margin-bottom: 1rem;
   display: inline-block;
-  padding: 0.8rem;
+  padding: 1rem 1.5rem; /* More padding for better spacing */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+  transition: transform 0.3s ease-in-out; /* Animation for hover effect */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for better readability */
 }
 
-.hero-subheading {
-  font-size: 1.2rem;
-  color: #fff; /* Adjust color as needed */
-  border-radius: 20px; /* Optional: to give rounded corners */
-  background-color: rgba(0, 0, 0, 0.651); /* Light grey with transparency */
-  padding: 20px;
-  margin: auto;
-  max-width: 50%;
+.hero-heading:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
 }
 
 .hero-btns {

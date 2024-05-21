@@ -42,10 +42,15 @@
     margin-top: 32px;
     text-align: center;
   }
+
+  .cards__text {
+    color: #252e48
+  }
   
   .cards__wrapper {
     position: relative;
     margin: 50px 0 45px;
+    margin-top: 4rem;
   }
   
   .cards__items {
@@ -124,6 +129,43 @@
     color: #252e48;
     font-size: 18px;
     line-height: 24px;
+  }
+
+  .cards__logo-section {
+    padding: 2rem 0;
+    text-align: center;
+    border-bottom: solid;
+    border-color: lightgray;
+    padding-bottom: 4rem;
+  }
+  
+  .cards__logo-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .cards__logo-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc; /* Thin grey outline */
+    border-radius: 10px; /* Slightly rounded borders */
+    overflow: hidden; /* Ensures that the image fits within the rounded corners */
+    padding: 5px; /* Optional padding for spacing */
+  }
+  
+  .cards__logo-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Ensures the image fits within the container without stretching */
+    transition: transform 0.3s ease-in-out;
+    border-radius: 10px; /* Ensures the image itself has rounded corners */
+  }
+  
+  .cards__logo-item:hover img {
+    transform: scale(1.05);
   }
   
   @media only screen and (min-width: 1200px) {
