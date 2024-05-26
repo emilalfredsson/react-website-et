@@ -82,7 +82,6 @@
 	--brandColor: hsl(var(--h), 71%, var(--l));
 	font-family: Montserrat, sans-serif;
 	margin: 0;
-	background-color: whitesmoke;
 }
 
 #safety-item > p {

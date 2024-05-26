@@ -6,14 +6,14 @@ function Cards() {
   // Example logo data
   const logos = [
     { src: 'images/et-images/customers/orkan.png'},
+    { src: 'images/et-images/customers/vinbudin.jpg'},
     { src: 'images/et-images/customers/lyfjaval.jpg'},
-    { src: 'images/et-images/customers/logoflex.png'},
-    { src: 'images/et-images/customers/Landsbankinn.png'},
     { src: 'images/et-images/customers/Skeljungur_logo.jpg'},
+    { src: 'images/et-images/customers/extra.jpg'},
+    { src: 'images/et-images/customers/Landsbankinn.png'},
     { src: 'images/et-images/customers/ksi.png'},
     { src: 'images/et-images/customers/hopp.jpg'},
-    { src: 'images/et-images/customers/extra.jpg'},
-    { src: 'images/et-images/customers/vinbudin.jpg'},
+    { src: 'images/et-images/customers/logoflex.png'},
     { src: 'images/et-images/customers/Snaefellsbaer.jpg'},
     { src: 'images/et-images/customers/logreglan.jpg'},
     { src: 'images/et-images/customers/Pósturinn.jpg'},

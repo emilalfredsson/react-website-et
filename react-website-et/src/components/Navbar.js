@@ -53,13 +53,8 @@ function Navbar() {
                         </Link>
                     </li>
                     <li className ='nav-item'>
-                        <Link to = '/services' className='nav-links' onClick = {handleLinkClick}>
-                            Þjónustur
-                        </Link>
-                    </li>
-                    <li className ='nav-item'>
                         <Link to = '/safety' className='nav-links' onClick = {handleLinkClick}>
-                            Öryggisþættir
+                            Þjónusta
                         </Link>
                     </li>
                     <li className ='nav-item'>
