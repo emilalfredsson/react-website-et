@@ -34,6 +34,7 @@
     padding-top: 24px;
     padding-bottom: 32px;
     color: lightgray;
+    border-width: 1px;
   }
 
   .safety__box > h1 {

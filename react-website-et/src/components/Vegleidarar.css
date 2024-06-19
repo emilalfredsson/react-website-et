@@ -1,0 +1,92 @@
+.vegleidarar {
+    padding: 4rem;
+    background: #fff;
+    padding-bottom: 2rem;
+  }
+  
+
+  .vegleidarar__content {
+    color: #252e48;
+    margin-top: 42px;
+    text-align: left;
+    font-size: 1.7rem;
+  }
+  
+
+  .vegleidarar {
+    padding: 20px;
+  }
+  
+  .vegleidarar__box {
+    margin-bottom: 20px;
+  }
+  
+  .vegleidarar__content {
+    margin-bottom: 10px;
+  }
+  
+  .vegleidarar__images {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+  }
+  
+  .vegleidarar__image {
+    width: 32%;
+    height: auto;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+
+  .vegleidarar__box {
+    margin-top: 32px;
+    margin-bottom: 32px;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    color: lightgray;
+  }
+
+  .fade-in {
+    opacity: 1;
+  }
+
+
+  .vegleidarar__text {
+    margin-top: 32px;
+    text-align: center;
+  }
+
+  .vegleidarar__text {
+    color: #252e48
+  }
+  
+  .vegleidarar__wrapper {
+    position: relative;
+    margin: 50px 0 45px;
+    margin-top: 4rem;
+  }
+  
+  .vegleidarar__items {
+    margin-bottom: 24px;
+  }
+  
+  .vegleidarar__item {
+    display: flex;
+    flex: 1;
+    margin: 0 1rem;
+    border-radius: 10px;
+  }
+  
+  
+  .vegleidarar__logo-item:hover img {
+    transform: scale(1.05);
+  }
+
+  @media screen and (max-width: 768px) {
+    .vegleidarar__box {
+      padding-left: 0;
+      padding-right:0;
+    }
+  }

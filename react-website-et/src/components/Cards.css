@@ -27,6 +27,7 @@
     padding-top: 24px;
     padding-bottom: 32px;
     color: lightgray;
+    border-width: 1px;
   }
 
   .cards__box > h1 {
@@ -136,7 +137,9 @@
     text-align: center;
     border-bottom: solid;
     border-color: lightgray;
-    padding-bottom: 4rem;
+    padding-bottom: 5rem;
+    margin-bottom: 4rem;
+    border-width: 1px;
   }
   
   .cards__logo-grid {

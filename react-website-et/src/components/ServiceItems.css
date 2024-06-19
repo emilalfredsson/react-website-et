@@ -20,6 +20,7 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 80%;
     margin: auto;
+    border-width: 1px;
   }
   
   .service-segment.image-right .service-image {
@@ -84,6 +85,7 @@
     padding-top: 24px;
     padding-bottom: 32px;
     color: lightgray;
+    border-width: 1px;
   }
 
   .service__box > h1 {

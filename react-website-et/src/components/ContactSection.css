@@ -24,6 +24,7 @@
     padding-top: 24px;
     padding-bottom: 32px;
     color: lightgray;
+    border-width: 1px;
   }
 
   .contact-header > h1 {

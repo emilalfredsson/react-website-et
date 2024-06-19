@@ -52,7 +52,7 @@ function Cards() {
               ))}
             </div>
             </div>   
-            <div className="cards__wrapper">
+            {/* <div className="cards__wrapper">
                 <ul className="cards__items">
                     <CardItem 
                      src ="images/et-images/IMG_0954-2.jpeg"
@@ -67,7 +67,7 @@ function Cards() {
                      path='/safety'
                     />
                 </ul>
-            </div>
+            </div> */}
         </div>   
     </div>
   );
