@@ -6,9 +6,10 @@ import './SafetySection.css';
 const images = [
   'images/et-images/IMG_0554.jpeg',
   'images/et-images/IMG_0639.jpeg',
-  'images/et-images/thumbnail_IMG_0992.jpg',
+  'images/et-images/IMG_0543.jpeg',
   'images/et-images/IMG_0948-2.jpeg',
-  'images/et-images/safety.png'
+  'images/et-images/safety.png',
+  'images/et-images/thumbnail_IMG_9033.jpg'
 ];
 
 function SafetySection() {

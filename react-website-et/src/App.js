@@ -9,6 +9,7 @@ import Vegmerkingar from './components/pages/Vegmerkingar';
 import Vegleidarar from './components/pages/Vegleidarar';
 import Stodvunardreglar from './components/pages/Stodvunardreglar';
 import Gangbrautarkerfi from './components/pages/Gangbrautarkerfi';
+import Thankyou from './components/pages/Thankyou';
 
 
 
@@ -26,6 +27,7 @@ function App() {
           <Route path='/vegleidarar' exact Component= {Vegleidarar}/>
           <Route path='/stodvunardreglar' exact Component= {Stodvunardreglar}/>
           <Route path='/gangbrautarkerfi' exact Component= {Gangbrautarkerfi}/>
+          <Route path='/thankyou' exact Component= {Thankyou}/>
         </Routes>
       </Router>
     </>

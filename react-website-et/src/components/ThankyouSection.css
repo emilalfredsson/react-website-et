@@ -1,0 +1,17 @@
+.thankyou-container {
+    min-height: 30vh;
+    color: #252e48;
+}
+
+
+.thankyou-header {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 12rem;
+    text-align: center;
+}
+
+.thankyou-header > h2 {
+    color: #252e48;
+
+}

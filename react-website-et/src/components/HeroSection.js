@@ -7,12 +7,12 @@ const images = [
   'images/et-images/IMG_1108.jpeg',
   'images/et-images/IMG_1208.jpg',
   'images/et-images/IMG_1097.jpeg',
-  'images/et-images/IMG_2671.jpg'
+  'images/et-images/thumbnail_IMG_8968.jpg'
 ];
 
 const textContent = [
   { heading: 'Bílastæða- og vegmerkingar'},
-  { heading: 'Stöðvunar Dreglar'},
+  { heading: 'Stöðvunardreglar'},
   { heading: 'Gangbrautarkerfi'},
   { heading: 'Vegleiðarar'}
 ];

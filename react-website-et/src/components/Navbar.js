@@ -23,6 +23,10 @@ function Navbar() {
         scrollToTop();
     };
 
+    const handleButtonClick = () => {
+        scrollToTop();
+    };
+
     const showButton = () => {
         if (window.innerWidth <= 960) {
             setButton(false);
@@ -95,7 +99,7 @@ function Navbar() {
                                     </li>
                                     <li>
                                         <Link to='/stodvunardreglar' className='dropdown-link' onClick={handleLinkClick}>
-                                            Stöðvunar Dreglar
+                                            Stöðvunardreglar
                                         </Link>
                                     </li>
                                     <li>
@@ -120,7 +124,7 @@ function Navbar() {
                                 </li>
                                 <li className='nav-item'>
                                     <Link to='/stodvunardreglar' className='nav-links' onClick={handleLinkClick}>
-                                        Stöðvunar Dreglar
+                                        Stöðvunardreglar
                                     </Link>
                                 </li>
                                 <li className='nav-item'>
@@ -136,7 +140,11 @@ function Navbar() {
                             </Link>
                         </li>
                     </ul>
-                    {button && <Button buttonStyle='btn--outline'>Hafa Samband</Button>}
+                    {button && (
+                        <Button buttonStyle='btn--outline' onClick={handleButtonClick}>
+                            Hafa Samband
+                        </Button>
+                    )}
                 </div>
             </nav>
         </>
