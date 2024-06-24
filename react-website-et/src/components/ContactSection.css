@@ -111,7 +111,7 @@
     margin-bottom: 5rem;
   }
 
-  .btn {
+  .btn.btn--outline.btn--medium {
     width: 80%;
   }
 
