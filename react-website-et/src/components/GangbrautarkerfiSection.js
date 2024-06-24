@@ -1,11 +1,11 @@
 import React from 'react';
 import '../App.css';
 import { Button } from './Button';
-import './GangbrautarkerfiSection.css'; // Make sure this points to your CSS file
+import './GangbrautarkerfiSection.css';
 
 function GangbrautarkerfiSection() {
 
-  const image = 'images/Screenshot 2024-06-19 220121.png'; // Path relative to public directory
+  const image = 'images/Screenshot 2024-06-19 220121.png';
 
   return (
     <div className='gangbrautarkerfi-container'>

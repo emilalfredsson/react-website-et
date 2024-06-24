@@ -89,4 +89,27 @@
       padding-left: 0;
       padding-right:0;
     }
+    .gangbrautarkerfi-heading {
+      font-size: 1.5rem;
+    }
+  
+    .gangbrautarkerfi__box {
+      padding:0;
+      margin:0;
+    }
+  
+    .gangbrautarkerfi__image {
+      width: 95%;
+      margin-bottom: 1rem;
+    }
+  
+    .gangbrautarkerfi__images {
+      margin-top: 2rem;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .gangbrautarkerfi__content {
+      font-size: 1.2rem;
   }
+}

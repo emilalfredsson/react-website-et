@@ -89,4 +89,27 @@
       padding-left: 0;
       padding-right:0;
     }
+    .vegleidarar-heading {
+      font-size: 1.5rem;
+    }
+  
+    .vegleidarar__box {
+      padding:0;
+      margin:0;
+    }
+  
+    .vegleidarar__image {
+      width: 95%;
+      margin-bottom: 1rem;
+    }
+  
+    .vegleidarar__images {
+      margin-top: 2rem;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .vegleidarar__content {
+      font-size: 1.2rem;
   }
+}

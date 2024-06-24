@@ -193,4 +193,17 @@
       padding-left: 0;
       padding-right:0;
     }
+
+    .cards {
+      padding: 2rem;
+    }
+
+    .cards__logo-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cards__logo-section {
+      padding-bottom: 0;
+      margin-bottom: 1rem;
+    }
   }

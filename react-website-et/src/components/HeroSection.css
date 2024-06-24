@@ -112,6 +112,14 @@
     .hero-container > p {
       font-size: 30px;
     }
+
+    .hero-heading {
+      font-size: 1.5rem;
+    }
+
+    .cards__header {
+      font-size: 1.4rem;
+    }
   
     .btn-mobile {
       display: block;

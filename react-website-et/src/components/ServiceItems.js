@@ -12,7 +12,7 @@ const services = [
   },
   {
     header: 'Vegleiðarar',
-    text: 'Snjómokstursgerður vegleiðari í steypujárnshlíf sem tryggir ekki aðeins framúrskarandi sýnileiki á veginum, heldur er hann líka einstaklega endingargóður og veðurheldur. Skiptaneg endurskinsmerki og lögun þess tryggja auðvelt viðhald og aukið viðnám gegn skemmdum, sem skilar sér í langtímavörn endurskinsmerkisins gegn skemmdum af völdum ökutækja.',
+    text: 'Snjómokstursgerður vegleiðari í steypujárnshlíf sem tryggir ekki aðeins framúrskarandi sýnileika á veginum, heldur er hann líka einstaklega endingargóður og veðurheldur. Skiptanleg endurskinsmerki og lögun þess tryggja auðvelt viðhald og aukið viðnám gegn skemmdum, sem skilar sér í langtímavörn endurskinsmerkisins gegn skemmdum af völdum ökutækja.',
     image: 'images/et-images/IMG_2671.jpg',
     link: '/vegleidarar'
   },

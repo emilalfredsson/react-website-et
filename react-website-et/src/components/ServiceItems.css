@@ -296,13 +296,10 @@
   }
   
   .service-image img {
-      width: 100%;
+      width: 90%;
       height: auto;
   }
   
-  .service-text {
-      margin: 0;
-  }
 }
 
 @media screen and (max-width: 768px) {
@@ -314,8 +311,38 @@
       font-size: 30px;
   }
 
+  .service__header {
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .service-header {
+    font-size: 1.3rem;
+    margin-top: 0.5rem;
+  }
+
+  .service-description {
+    font-size: 1rem;
+    line-height: 1.3;
+  }
+
+  .service__text {
+    font-size: 1.2rem;
+    margin: 0.3rem;
+  }
+
+  .service-segment {
+    padding: 0;
+    max-width: 100%;
+  }
+
   .service__box {
       padding-left: 0;
       padding-right: 0;
+  }
+
+  .service__content {
+    padding: 2rem;
   }
 }

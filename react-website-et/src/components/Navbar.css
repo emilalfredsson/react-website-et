@@ -76,6 +76,10 @@
     position: relative;
   }
 
+  .nav-item{
+    height:60px
+  }
+
   .nav-menu {
     display: flex;
     flex-direction: column;
