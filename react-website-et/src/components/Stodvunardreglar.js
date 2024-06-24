@@ -3,14 +3,21 @@ import './Stodvunardreglar.css';
 
 function Stodvunardreglar() {
   useEffect(() => {
+    let timeoutId = null;
+
     const handleScroll = () => {
-      const images = document.querySelectorAll('.stodvunardreglar__image');
-      images.forEach(image => {
-        const rect = image.getBoundingClientRect();
-        if (rect.top < window.innerHeight && rect.bottom > 0) {
-          image.classList.add('fade-in');
-        }
-      });
+      if (timeoutId) {
+        clearTimeout(timeoutId);
+      }
+      timeoutId = setTimeout(() => {
+        const images = document.querySelectorAll('.stodvunardreglar__image');
+        images.forEach(image => {
+          const rect = image.getBoundingClientRect();
+          if (rect.top < window.innerHeight && rect.bottom > 0) {
+            image.classList.add('fade-in');
+          }
+        });
+      }, 100); // Adjust the delay as needed
     };
 
     window.addEventListener('scroll', handleScroll);
