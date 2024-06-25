@@ -1,69 +1,67 @@
-import React, { useState } from 'react';
+import React, { useRef } from 'react';
 import './ContactSection.css';
 import './Button.css';
-import { useNavigate } from 'react-router-dom'; // Import useNavigate
 
 function ContactSection() {
-  const navigate = useNavigate(); // Initialize useNavigate
+  const formRef = useRef(null);
 
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    message: '',
-  });
+  const handleSubmit = (e) => {
+    e.preventDefault();
 
-  const [errors, setErrors] = useState({});
+    const form = formRef.current;
+    const formData = new FormData(form);
 
-  const validateForm = () => {
-    const newErrors = {};
+    // Basic validation
+    const name = formData.get('name');
+    const email = formData.get('email');
+    const phone = formData.get('phone');
+    const message = formData.get('message');
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     const phoneRegex = /^\d{7}$/;
 
-    if (!formData.name) {
-      newErrors.name = 'Nafn er nauðsynlegt';
+    if (!name) {
+      alert('Nafn er nauðsynlegt');
+      return;
     }
-    if (!formData.email) {
-      newErrors.email = 'Netfang er nauðsynlegt';
-    } else if (!emailRegex.test(formData.email)) {
-      newErrors.email = 'Netfang er ekki gilt';
+    if (!email) {
+      alert('Netfang er nauðsynlegt');
+      return;
     }
-    if (!formData.phone) {
-      newErrors.phone = 'Símanúmer er nauðsynlegt';
-    } else if (!phoneRegex.test(formData.phone)) {
-      newErrors.phone = 'Símanúmerið þarf að vera 7 tölustafir';
+    if (!emailRegex.test(email)) {
+      alert('Netfangið er ekki gilt');
+      return;
     }
-    if (!formData.message) {
-      newErrors.message = 'Fyrirspurn er nauðsynleg';
+    if (!phone) {
+      alert('Símanúmer er nauðsynlegt');
+      return;
+    }
+    if (!phoneRegex.test(phone)) {
+      alert('Símanúmerið þarf að vera 7 tölustafir');
+      return;
+    }
+    if (!message) {
+      alert('Fyrirspurn er nauðsynleg');
+      return;
     }
 
-    setErrors(newErrors);
-    return Object.keys(newErrors).length === 0;
-  };
+    // Set the redirect URL dynamically
+    formData.set('redirectTo', `${window.location.origin}/thankyou`);
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+    // Create a temporary form element to submit the data
+    const tempForm = document.createElement('form');
+    tempForm.action = form.action;
+    tempForm.method = form.method;
 
-    if (validateForm()) {
-      const form = e.target;
-      try {
-        await fetch(form.action, {
-          method: 'POST',
-          body: new FormData(form),
-        });
+    formData.forEach((value, key) => {
+      const hiddenField = document.createElement('input');
+      hiddenField.type = 'hidden';
+      hiddenField.name = key;
+      hiddenField.value = value;
+      tempForm.appendChild(hiddenField);
+    });
 
-        // Redirect to thank you page
-        navigate('/thankyou');
-      } catch (error) {
-        console.error('Error submitting form:', error);
-        // Handle error if submission fails
-      }
-    }
-  };
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prevData) => ({ ...prevData, [name]: value }));
+    document.body.appendChild(tempForm);
+    tempForm.submit();
   };
 
   return (
@@ -73,52 +71,45 @@ function ContactSection() {
         <p>Sendu okkur fyrirspurnir hér og við svörum við fyrsta tækifæri</p>
       </div>
       <div className='input-areas'>
-        <form action="https://api.staticforms.xyz/submit" method="post" onSubmit={handleSubmit}>
+        <form
+          action="https://api.staticforms.xyz/submit"
+          method="post"
+          onSubmit={handleSubmit}
+          ref={formRef}
+        >
           <input
             className='form-input'
             name='name'
             type='text'
             placeholder='Nafn þitt'
-            value={formData.name}
-            onChange={handleChange}
             required
           />
-          {errors.name && <p className="error-message">{errors.name}</p>}
           <input
             className='form-input'
             name='email'
             type='email'
             placeholder='Netfangið þitt'
-            value={formData.email}
-            onChange={handleChange}
             required
           />
-          {errors.email && <p className="error-message">{errors.email}</p>}
           <input
             className='form-input'
             name='phone'
             type='text'
             placeholder='Símanúmerið þitt'
-            value={formData.phone}
-            onChange={handleChange}
             required
           />
-          {errors.phone && <p className="error-message">{errors.phone}</p>}
           <textarea
             className='form-input'
             name='message'
             placeholder='Fyrirspurn'
             rows='4'
-            value={formData.message}
-            onChange={handleChange}
             required
           />
-          {errors.message && <p className="error-message">{errors.message}</p>}
           <input type="text" name="honeypot" style={{ display: 'none' }} />
           <input type="hidden" name="accessKey" value="cc6f1e81-0dd9-482f-8059-556c245779c6" />
           <input type="hidden" name="subject" value="Fyrirspurn frá etomasson.is" />
           <input type="hidden" name="replyTo" value="emilalfredsson@hotmail.com" />
-          <input type="hidden" name="redirectTo" value="/thankyou" /> {/* Redirect URL */}
+          <input type="hidden" name="redirectTo" value={`${window.location.origin}/thankyou`} />
           <input className="btn btn--outline btn--medium" type="submit" value="Senda" />
         </form>
       </div>
