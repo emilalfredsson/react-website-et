@@ -4,11 +4,11 @@ import { Button } from './Button';
 import './HeroSection.css';
 
 const images = [
-  'images/et-images/IMG_1108.jpeg',
-  'images/et-images/IMG_1208.jpg',
-  'images/et-images/IMG_1097.jpeg',
-  'images/et-images/thumbnail_IMG_8968.jpg'
-];
+  `${process.env.PUBLIC_URL}/images/et-images/IMG_1108.jpeg`,
+  `${process.env.PUBLIC_URL}/images/et-images/IMG_1208.jpg`,
+  `${process.env.PUBLIC_URL}/images/et-images/IMG_1097.jpeg`,
+  `${process.env.PUBLIC_URL}/images/et-images/thumbnail_IMG_8968.jpg`
+]
 
 const textContent = [
   { heading: 'Bílastæða- og vegmerkingar'},

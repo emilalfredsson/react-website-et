@@ -4,31 +4,31 @@ import './Cards.css';
 function Cards() {
   // Example logo data
   const logos = [
-    { src: 'images/et-images/customers/orkan.png'},
-    { src: 'images/et-images/customers/vinbudin.jpg'},
-    { src: 'images/et-images/customers/lyfjaval.jpg'},
-    { src: 'images/et-images/customers/Skeljungur_logo.jpg'},
-    { src: 'images/et-images/customers/extra.jpg'},
-    { src: 'images/et-images/customers/Landsbankinn.png'},
-    { src: 'images/et-images/customers/ksi.png'},
-    { src: 'images/et-images/customers/hopp.jpg'},
-    { src: 'images/et-images/customers/logoflex.png'},
-    { src: 'images/et-images/customers/Snaefellsbaer.jpg'},
-    { src: 'images/et-images/customers/logreglan.jpg'},
-    { src: 'images/et-images/customers/Pósturinn.jpg'},
-    { src: 'images/et-images/customers/ua.png'},
-    { src: 'images/et-images/customers/Akureyri.jpg'},
-    { src: 'images/et-images/customers/logo_samherji.jpg'},
-    { src: 'images/et-images/customers/icelandair.svg'},
-    { src: 'images/et-images/customers/holdur.jpg'},
-    { src: 'images/et-images/customers/kristjans.png'},
-    { src: 'images/et-images/customers/heimstaden.jpg'},
-    { src: 'images/et-images/customers/bmvalla.png'},
-    { src: 'images/et-images/customers/felagsbustadir.jpg'},
-    { src: 'images/et-images/customers/flugger.jpg' },
-    { src: 'images/et-images/customers/greifinn.png'},
-    { src: 'images/et-images/customers/taekni.png'}         
-  ];
+    { src: `${process.env.PUBLIC_URL}/images/et-images/customers/orkan.png` },
+    { src: `${process.env.PUBLIC_URL}/images/et-images/customers/vinbudin.jpg` },
+    { src: `${process.env.PUBLIC_URL}/images/et-images/customers/lyfjaval.jpg` },
+    { src: `${process.env.PUBLIC_URL}/images/et-images/customers/Skeljungur_logo.jpg` },
+    { src: `${process.env.PUBLIC_URL}/images/et-images/customers/extra.jpg` },
+    { src: `${process.env.PUBLIC_URL}/images/et-images/customers/Landsbankinn.png` },
+    { src: `${process.env.PUBLIC_URL}/images/et-images/customers/ksi.png` },
+    { src: `${process.env.PUBLIC_URL}/images/et-images/customers/hopp.jpg` },
+    { src: `${process.env.PUBLIC_URL}/images/et-images/customers/logoflex.png` },
+    { src: `${process.env.PUBLIC_URL}/images/et-images/customers/Snaefellsbaer.jpg` },
+    { src: `${process.env.PUBLIC_URL}/images/et-images/customers/logreglan.jpg` },
+    { src: `${process.env.PUBLIC_URL}/images/et-images/customers/Pósturinn.jpg` },
+    { src: `${process.env.PUBLIC_URL}/images/et-images/customers/ua.png` },
+    { src: `${process.env.PUBLIC_URL}/images/et-images/customers/Akureyri.jpg` },
+    { src: `${process.env.PUBLIC_URL}/images/et-images/customers/logo_samherji.jpg` },
+    { src: `${process.env.PUBLIC_URL}/images/et-images/customers/icelandair.svg` },
+    { src: `${process.env.PUBLIC_URL}/images/et-images/customers/holdur.jpg` },
+    { src: `${process.env.PUBLIC_URL}/images/et-images/customers/kristjans.png` },
+    { src: `${process.env.PUBLIC_URL}/images/et-images/customers/heimstaden.jpg` },
+    { src: `${process.env.PUBLIC_URL}/images/et-images/customers/bmvalla.png` },
+    { src: `${process.env.PUBLIC_URL}/images/et-images/customers/felagsbustadir.jpg` },
+    { src: `${process.env.PUBLIC_URL}/images/et-images/customers/flugger.jpg` },
+    { src: `${process.env.PUBLIC_URL}/images/et-images/customers/greifinn.png` },
+    { src: `${process.env.PUBLIC_URL}/images/et-images/customers/taekni.png` }
+];
 
   return (
     <div className='cards'>
