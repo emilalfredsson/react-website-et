@@ -5,12 +5,10 @@
   <title>Page Not Found</title>
   <meta http-equiv="refresh" content="0; URL='/'">
   <script type="text/javascript">
-    // Redirect to the index.html with the original path and hash preserved
+    // Redirect to the index.html with the original path preserved
     var pathname = window.location.pathname;
-    var search = window.location.search;
-    var hash = window.location.hash;
     if (pathname !== '/') {
-      window.location.href = '/index.html' + (hash || '') + (search || '');
+      window.location.href = '/' + '#' + pathname;
     }
   </script>
 </head>
